@@ -11,3 +11,9 @@ def square_item(item):
 
 #MAP
 print(list(map(square_item, [4,5,6])))
+
+#Filter
+def check_odd(item):
+    return item % 2 != 0
+
+print(list(filter(check_odd, [2,3,4,5,6])))
