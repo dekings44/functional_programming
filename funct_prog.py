@@ -17,6 +17,11 @@ print(list(map(square_item, [4,5,6])))
 x = map(add_tup, ('apple', 'oranges', 'cherry'), ('lemon', 'mango', 'pear'))
 print(list(x))
 
+abs_val = map(abs, [-2, 4, -5, -8])
+flt = map(float, [-2, 4, -5, -8])
+print(list(abs_val))
+print(list(flt))
+
 #Filter
 def check_odd(item):
     return item % 2 != 0
