@@ -22,6 +22,10 @@ flt = map(float, [-2, 4, -5, -8])
 print(list(abs_val))
 print(list(flt))
 
+numb = [6, 8, 7, -2, 12]
+cubed = map(lambda num: num**3, numb)
+print(list(cubed))
+
 #Filter
 def check_odd(item):
     return item % 2 != 0
