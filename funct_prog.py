@@ -7,10 +7,15 @@ def multipy_by2(li):
 print(multipy_by2([8,6,7]))
 
 def square_item(item):
-    return item*item
+    return item
+    
+def add_tup(a,b):
+    return a + b
 
 #MAP
 print(list(map(square_item, [4,5,6])))
+x = map(add_tup, ('apple', 'oranges', 'cherry'), ('lemon', 'mango', 'pear'))
+print(list(x))
 
 #Filter
 def check_odd(item):
