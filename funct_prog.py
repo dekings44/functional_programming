@@ -26,6 +26,7 @@ numb = [6, 8, 7, -2, 12]
 cubed = map(lambda num: num**3, numb)
 print(list(cubed))
 
+
 #Filter
 def check_odd(item):
     return item % 2 != 0
