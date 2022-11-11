@@ -13,5 +13,8 @@ hotel_data['total_reviews'] = hotel_data['total_reviews'].str.replace(',', '', r
 hotel_data['total_reviews'] = hotel_data['total_reviews'].apply(pd.to_numeric,errors='coerce')
 print(hotel_data.head())
 
-result = hotel_data.groupby(['rating_desciption','price (£)'])['total_reviews'].aggregate(['mean', 'count'])
+desc_groupby = hotel_data.groupby(['rating_desciption','price (£)'])['total_reviews'].aggregate(['mean', 'count'])
+
+
+result = hotel_data.groupby(['rating_desciption','price (£)']).mean()
 print(result)
